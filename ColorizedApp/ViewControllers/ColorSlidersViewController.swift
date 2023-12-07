@@ -9,20 +9,27 @@ import UIKit
 
 final class ColorSlidersViewController: UIViewController {
     
-    @IBOutlet private weak var colorView: UIView!
+    @IBOutlet weak var colorView: UIView!
     
     @IBOutlet private weak var redLabel: UILabel!
     @IBOutlet private weak var greenLabel: UILabel!
     @IBOutlet private weak var blueLabel: UILabel!
     
-    @IBOutlet private weak var redSlider: UISlider!
-    @IBOutlet private weak var greenSlider: UISlider!
-    @IBOutlet private weak var blueSlider: UISlider!
+    @IBOutlet  weak var redSlider: UISlider!
+    @IBOutlet  weak var greenSlider: UISlider!
+    @IBOutlet  weak var blueSlider: UISlider!
+    
+    weak var delegate: ColorSlidersViewControllerDelegate?
+    
+    var color: UIColor!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setColor()
+        
+        colorView.backgroundColor = color
+        
     }
     
     
@@ -40,11 +47,12 @@ final class ColorSlidersViewController: UIViewController {
     }
     
     @IBAction func doneButtonPressed() {
+        delegate?.setColorMainView(from: colorView)
         dismiss(animated: true)
     }
     
     
-    private func setColor() {
+     func setColor() {
         
         colorView.backgroundColor = UIColor(
             red: redSlider.value.cgFloat(),
