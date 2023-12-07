@@ -30,7 +30,7 @@ final class ColorSlidersViewController: UIViewController {
         
         colorView.backgroundColor = color
         
-        extractValuesFromSliders()
+        extractValuesForSliders()
         
         assignSliderValuesToLabels()
         
@@ -67,7 +67,7 @@ final class ColorSlidersViewController: UIViewController {
         )
     }
     
-    private func extractValuesFromSliders() {
+    private func extractValuesForSliders() {
         
         redSlider.value = Float(color.redValue)
         greenSlider.value = Float(color.greenValue)
