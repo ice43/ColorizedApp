@@ -12,7 +12,7 @@
 		CD649B072B08F51C00482E9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD649B052B08F51C00482E9C /* Main.storyboard */; };
 		CD649B092B08F51D00482E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD649B082B08F51D00482E9C /* Assets.xcassets */; };
 		CD649B0C2B08F51D00482E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD649B0A2B08F51D00482E9C /* LaunchScreen.storyboard */; };
-		CDC724392B0CBC3B0081C21A /* ColorSlidersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC724382B0CBC3B0081C21A /* ColorSlidersViewController.swift */; };
+		CDC724392B0CBC3B0081C21A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC724382B0CBC3B0081C21A /* SettingsViewController.swift */; };
 		CDD013E12B21D573004330AC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD013E02B21D573004330AC /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 		CD649B082B08F51D00482E9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD649B0B2B08F51D00482E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD649B0D2B08F51D00482E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDC724382B0CBC3B0081C21A /* ColorSlidersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlidersViewController.swift; sourceTree = "<group>"; };
+		CDC724382B0CBC3B0081C21A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CDD013E02B21D573004330AC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				CDD013E02B21D573004330AC /* MainViewController.swift */,
-				CDC724382B0CBC3B0081C21A /* ColorSlidersViewController.swift */,
+				CDC724382B0CBC3B0081C21A /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD649B002B08F51C00482E9C /* AppDelegate.swift in Sources */,
-				CDC724392B0CBC3B0081C21A /* ColorSlidersViewController.swift in Sources */,
+				CDC724392B0CBC3B0081C21A /* SettingsViewController.swift in Sources */,
 				CD649B022B08F51C00482E9C /* SceneDelegate.swift in Sources */,
 				CDD013E12B21D573004330AC /* MainViewController.swift in Sources */,
 			);

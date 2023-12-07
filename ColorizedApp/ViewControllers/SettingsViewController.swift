@@ -1,5 +1,5 @@
 //
-//  ColorSlidersViewController.swift
+//  SettingsViewController.swift
 //  ColorizedApp
 //
 //  Created by Serge Bowski on 11/21/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ColorSlidersViewController: UIViewController {
+final class SettingsViewController: UIViewController {
     
     @IBOutlet private weak var colorView: UIView!
     
@@ -23,7 +23,7 @@ final class ColorSlidersViewController: UIViewController {
     @IBOutlet private weak var greenSliderTextField: UITextField!
     @IBOutlet private weak var blueSliderTextField: UITextField!
     
-    weak var delegate: ColorSlidersViewControllerDelegate?
+    weak var delegate: SettingsViewControllerDelegate?
     
     var color: UIColor!
     
@@ -159,7 +159,7 @@ final class ColorSlidersViewController: UIViewController {
     }
     
     private func wrongData() {
-        alert(withTitle: "Wrong format!", andMessage: "Please enter correct value")
+        alert(withTitle: "Wrong format!", andMessage: "Please, enter correct value")
     }
     
     private func addAccessoryViewForInputOfTF() {
@@ -176,7 +176,7 @@ final class ColorSlidersViewController: UIViewController {
 }
 
 // MARK: - UITextFieldDelegate
-extension ColorSlidersViewController: UITextFieldDelegate {
+extension SettingsViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         
         guard let redSliderTFFloat = Float(redSliderTextField.text!),

@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ColorSlidersViewControllerDelegate: AnyObject {
+protocol SettingsViewControllerDelegate: AnyObject {
     func setColorMainView(from view: UIView)
 }
 
@@ -16,7 +16,7 @@ protocol ColorSlidersViewControllerDelegate: AnyObject {
 final class MainViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let colorSlidersVC = segue.destination as? ColorSlidersViewController else {
+        guard let colorSlidersVC = segue.destination as? SettingsViewController else {
             return
         }
         
@@ -28,8 +28,8 @@ final class MainViewController: UIViewController {
 
 }
 
-// MARK: - ColorSlidersViewControllerDelegate
-extension MainViewController: ColorSlidersViewControllerDelegate {
+// MARK: - SettingsViewControllerDelegate
+extension MainViewController: SettingsViewControllerDelegate {
     func setColorMainView(from colorView: UIView) {
         view.backgroundColor = colorView.backgroundColor
     }
