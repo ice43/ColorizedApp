@@ -88,8 +88,8 @@
 		CDD013E22B21D5C4004330AC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CDC724382B0CBC3B0081C21A /* ColorSlidersViewController.swift */,
 				CDD013E02B21D573004330AC /* MainViewController.swift */,
+				CDC724382B0CBC3B0081C21A /* ColorSlidersViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
