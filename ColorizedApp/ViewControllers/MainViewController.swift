@@ -14,12 +14,6 @@ protocol ColorSlidersViewControllerDelegate: AnyObject {
 
 
 final class MainViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let colorSlidersVC = segue.destination as? ColorSlidersViewController else {
