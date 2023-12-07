@@ -30,6 +30,8 @@ final class MainViewController: UIViewController {
         
         colorSlidersVC.color = view.backgroundColor
         
+        
+        
     }
 
 }

@@ -15,9 +15,9 @@ final class ColorSlidersViewController: UIViewController {
     @IBOutlet private weak var greenLabel: UILabel!
     @IBOutlet private weak var blueLabel: UILabel!
     
-    @IBOutlet  weak var redSlider: UISlider!
-    @IBOutlet  weak var greenSlider: UISlider!
-    @IBOutlet  weak var blueSlider: UISlider!
+    @IBOutlet private weak var redSlider: UISlider!
+    @IBOutlet private weak var greenSlider: UISlider!
+    @IBOutlet private weak var blueSlider: UISlider!
     
     weak var delegate: ColorSlidersViewControllerDelegate?
     
@@ -29,6 +29,7 @@ final class ColorSlidersViewController: UIViewController {
         setColor()
         
         colorView.backgroundColor = color
+        
         
     }
     
@@ -52,7 +53,7 @@ final class ColorSlidersViewController: UIViewController {
     }
     
     
-     func setColor() {
+     private func setColor() {
         
         colorView.backgroundColor = UIColor(
             red: redSlider.value.cgFloat(),
