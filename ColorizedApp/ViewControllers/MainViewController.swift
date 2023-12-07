@@ -30,7 +30,9 @@ final class MainViewController: UIViewController {
         
         colorSlidersVC.color = view.backgroundColor
         
-        
+//        colorSlidersVC.redValue = Float(colorSlidersVC.color.ciColor.red)
+//        colorSlidersVC.greenValue = Float(colorSlidersVC.color.ciColor.green)
+//        colorSlidersVC.blueValue = Float(colorSlidersVC.color.ciColor.blue)
         
     }
 
@@ -44,3 +46,5 @@ extension MainViewController: ColorSlidersViewControllerDelegate {
     
     
 }
+
+

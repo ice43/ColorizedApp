@@ -23,6 +23,10 @@ final class ColorSlidersViewController: UIViewController {
     
     var color: UIColor!
     
+    var redValue: Float!
+    var greenValue: Float!
+    var blueValue: Float!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +34,13 @@ final class ColorSlidersViewController: UIViewController {
         
         colorView.backgroundColor = color
         
+        redSlider.value = Float(color.redValue)
+        greenSlider.value = Float(color.greenValue)
+        blueSlider.value = Float(color.blueValue)
+        
+        redLabel.text = string(from: redSlider)
+        greenLabel.text = string(from: greenSlider)
+        blueLabel.text = string(from: blueSlider)
         
     }
     
@@ -73,4 +84,12 @@ extension Float {
     func cgFloat() -> CGFloat {
         CGFloat(self)
     }
+}
+
+
+extension UIColor {
+    var redValue: CGFloat{ return CIColor(color: self).red }
+    var greenValue: CGFloat{ return CIColor(color: self).green }
+    var blueValue: CGFloat{ return CIColor(color: self).blue }
+    var alphaValue: CGFloat{ return CIColor(color: self).alpha }
 }
