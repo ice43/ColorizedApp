@@ -9,23 +9,21 @@
 /* Begin PBXBuildFile section */
 		CD649B002B08F51C00482E9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD649AFF2B08F51C00482E9C /* AppDelegate.swift */; };
 		CD649B022B08F51C00482E9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD649B012B08F51C00482E9C /* SceneDelegate.swift */; };
-		CD649B042B08F51C00482E9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD649B032B08F51C00482E9C /* ViewController.swift */; };
 		CD649B072B08F51C00482E9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD649B052B08F51C00482E9C /* Main.storyboard */; };
 		CD649B092B08F51D00482E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD649B082B08F51D00482E9C /* Assets.xcassets */; };
 		CD649B0C2B08F51D00482E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD649B0A2B08F51D00482E9C /* LaunchScreen.storyboard */; };
-		CDC724392B0CBC3B0081C21A /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC724382B0CBC3B0081C21A /* SecondVC.swift */; };
+		CDC724392B0CBC3B0081C21A /* ColorSlidersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC724382B0CBC3B0081C21A /* ColorSlidersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD649AFC2B08F51C00482E9C /* ColorizedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorizedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD649AFF2B08F51C00482E9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD649B012B08F51C00482E9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD649B032B08F51C00482E9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD649B062B08F51C00482E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD649B082B08F51D00482E9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD649B0B2B08F51D00482E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD649B0D2B08F51D00482E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDC724382B0CBC3B0081C21A /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		CDC724382B0CBC3B0081C21A /* ColorSlidersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlidersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +58,8 @@
 			children = (
 				CD649AFF2B08F51C00482E9C /* AppDelegate.swift */,
 				CD649B012B08F51C00482E9C /* SceneDelegate.swift */,
-				CD649B032B08F51C00482E9C /* ViewController.swift */,
 				CD649B052B08F51C00482E9C /* Main.storyboard */,
-				CDC724382B0CBC3B0081C21A /* SecondVC.swift */,
+				CDC724382B0CBC3B0081C21A /* ColorSlidersViewController.swift */,
 				CD649B082B08F51D00482E9C /* Assets.xcassets */,
 				CD649B0A2B08F51D00482E9C /* LaunchScreen.storyboard */,
 				CD649B0D2B08F51D00482E9C /* Info.plist */,
@@ -141,9 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD649B042B08F51C00482E9C /* ViewController.swift in Sources */,
 				CD649B002B08F51C00482E9C /* AppDelegate.swift in Sources */,
-				CDC724392B0CBC3B0081C21A /* SecondVC.swift in Sources */,
+				CDC724392B0CBC3B0081C21A /* ColorSlidersViewController.swift in Sources */,
 				CD649B022B08F51C00482E9C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

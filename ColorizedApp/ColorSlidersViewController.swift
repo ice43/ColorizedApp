@@ -1,5 +1,5 @@
 //
-//  SecondVC.swift
+//  ColorSlidersViewController.swift
 //  ColorizedApp
 //
 //  Created by Serge Bowski on 11/21/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SecondVC: UIViewController {
+final class ColorSlidersViewController: UIViewController {
     
     @IBOutlet private weak var colorView: UIView!
     
@@ -38,6 +38,11 @@ final class SecondVC: UIViewController {
             blueLabel.text = string(from: blueSlider)
         }
     }
+    
+    @IBAction func doneButtonPressed() {
+        dismiss(animated: true)
+    }
+    
     
     private func setColor() {
         
