@@ -9,7 +9,7 @@ import UIKit
 
 final class ColorSlidersViewController: UIViewController {
     
-    @IBOutlet weak var colorView: UIView!
+    @IBOutlet private weak var colorView: UIView!
     
     @IBOutlet private weak var redLabel: UILabel!
     @IBOutlet private weak var greenLabel: UILabel!
@@ -23,10 +23,6 @@ final class ColorSlidersViewController: UIViewController {
     
     var color: UIColor!
     
-    var redValue: Float!
-    var greenValue: Float!
-    var blueValue: Float!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,17 +30,13 @@ final class ColorSlidersViewController: UIViewController {
         
         colorView.backgroundColor = color
         
-        redSlider.value = Float(color.redValue)
-        greenSlider.value = Float(color.greenValue)
-        blueSlider.value = Float(color.blueValue)
+        extractValuesFromSliders()
         
-        redLabel.text = string(from: redSlider)
-        greenLabel.text = string(from: greenSlider)
-        blueLabel.text = string(from: blueSlider)
+        assignSliderValuesToLabels()
         
     }
     
-    
+    // MARK: - IB Actions
     @IBAction func sliderAction(_ sender: UISlider) {
         setColor()
         
@@ -64,7 +56,8 @@ final class ColorSlidersViewController: UIViewController {
     }
     
     
-     private func setColor() {
+    // MARK: - Private Methods
+    private func setColor() {
         
         colorView.backgroundColor = UIColor(
             red: redSlider.value.cgFloat(),
@@ -74,10 +67,25 @@ final class ColorSlidersViewController: UIViewController {
         )
     }
     
+    private func extractValuesFromSliders() {
+        
+        redSlider.value = Float(color.redValue)
+        greenSlider.value = Float(color.greenValue)
+        blueSlider.value = Float(color.blueValue)
+    }
+    
+    private func assignSliderValuesToLabels() {
+        
+        redLabel.text = string(from: redSlider)
+        greenLabel.text = string(from: greenSlider)
+        blueLabel.text = string(from: blueSlider)
+    }
+    
     private func string(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
     }
 }
+
 
 
 extension Float {
