@@ -144,16 +144,25 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="47" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="alert" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="p97-ZP-TWn" id="Owd-Pw-q3x"/>
+                                                        </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dT2-NW-YAp">
                                                         <rect key="frame" x="0.0" y="53" width="47" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="alert" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="p97-ZP-TWn" id="tco-v8-PiA"/>
+                                                        </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZSY-Up-7rp">
                                                         <rect key="frame" x="0.0" y="106" width="47" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="alert" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="p97-ZP-TWn" id="UYV-T6-u4h"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
@@ -193,14 +202,14 @@
                     <connections>
                         <outlet property="blueLabel" destination="9ZA-IL-RDj" id="B1F-FG-mOD"/>
                         <outlet property="blueSlider" destination="aSt-hE-e8y" id="pJt-rF-8OB"/>
-                        <outlet property="blueSliderTextField" destination="ZSY-Up-7rp" id="DoG-V9-YvC"/>
+                        <outlet property="blueTextField" destination="ZSY-Up-7rp" id="DoG-V9-YvC"/>
                         <outlet property="colorView" destination="NYz-lN-b3G" id="tvP-i6-Bae"/>
                         <outlet property="greenLabel" destination="CEC-1h-0zA" id="djp-VR-iow"/>
                         <outlet property="greenSlider" destination="la5-Fj-fs1" id="bN3-ca-Sel"/>
-                        <outlet property="greenSliderTextField" destination="dT2-NW-YAp" id="8q3-27-8Ve"/>
+                        <outlet property="greenTextField" destination="dT2-NW-YAp" id="8q3-27-8Ve"/>
                         <outlet property="redLabel" destination="TSh-Ao-SoR" id="3St-I9-unM"/>
                         <outlet property="redSlider" destination="0SF-Ia-aJR" id="U0w-sL-L7l"/>
-                        <outlet property="redSliderTextField" destination="w0m-A6-an0" id="hib-Wd-fqF"/>
+                        <outlet property="redTextField" destination="w0m-A6-an0" id="hib-Wd-fqF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qh1-By-0pW" sceneMemberID="firstResponder"/>

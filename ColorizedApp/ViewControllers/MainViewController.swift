@@ -8,33 +8,25 @@
 import UIKit
 
 protocol SettingsViewControllerDelegate: AnyObject {
-    func setColorMainView(from view: UIView)
+    func setColor(_ color: UIColor)
 }
 
-
-
 final class MainViewController: UIViewController {
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let colorSlidersVC = segue.destination as? SettingsViewController else {
+        guard let settingsVC = segue.destination as? SettingsViewController else {
             return
         }
         
-        colorSlidersVC.delegate = self
-        
-        colorSlidersVC.color = view.backgroundColor
-        
+        settingsVC.delegate = self
+        settingsVC.color = view.backgroundColor
     }
-
 }
 
 // MARK: - SettingsViewControllerDelegate
 extension MainViewController: SettingsViewControllerDelegate {
-    func setColorMainView(from colorView: UIView) {
-        view.backgroundColor = colorView.backgroundColor
+    func setColor(_ color: UIColor) {
+        view.backgroundColor = color
     }
-    
-    
 }
 
 
