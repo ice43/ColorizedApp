@@ -98,9 +98,9 @@ extension SettingsViewController {
             case redTextField:
                 textField.text = string(from: redSlider)
             case greenTextField:
-                textField.text = string(from: redSlider)
+                textField.text = string(from: greenSlider)
             default:
-                textField.text = string(from: redSlider)
+                textField.text = string(from: blueSlider)
             }
         }
     }
@@ -207,9 +207,6 @@ extension SettingsViewController: UITextFieldDelegate {
     }
     
 }
-
-
-
 
 // MARK: - Other interesting extensions
 extension Float {
