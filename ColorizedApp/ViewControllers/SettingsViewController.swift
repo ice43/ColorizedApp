@@ -37,8 +37,6 @@ final class SettingsViewController: UIViewController {
         setValue(for: redSlider, greenSlider, blueSlider)
         setValue(for: redLabel, greenLabel, blueLabel)
         setValue(for: redTextField, greenTextField, blueTextField)
-        
-//        assignTextFieldsDelegate()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -54,10 +52,10 @@ final class SettingsViewController: UIViewController {
             setValue(for: redTextField)
         case greenSlider:
             setValue(for: greenLabel)
-            setValue(for: greenSlider)
+            setValue(for: greenTextField)
         default:
             setValue(for: blueLabel)
-            setValue(for: blueSlider)
+            setValue(for: blueTextField)
         }
         
         setColor()
@@ -120,14 +118,6 @@ extension SettingsViewController {
             }
         }
     }
-
-    
-//    private func assignTextFieldsDelegate() {
-//        
-//        redTextField.delegate = self
-//        greenTextField.delegate = self
-//        blueTextField.delegate = self
-//    }
     
     private func showAlert(
         withTitle title: String,
@@ -227,5 +217,4 @@ extension Float {
         CGFloat(self)
     }
 }
-
 
